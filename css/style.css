@@ -148,6 +148,8 @@ body {
   line-height: 1.6;
 }
 
+.copyright-link
+
 :focus-visible { outline-offset: 4px; }
 
 ::-webkit-scrollbar { width: 5px; }
@@ -215,7 +217,11 @@ body {
 
 .h3 { font-size: var(--fs-4); }
 
-.section-text { font-size: var(--fs-6); }
+.section-text { 
+  font-size: var(--fs-6);
+  font-family: auto;
+  color: #181717d1;
+ }
 
 .btn {
   max-width: max-content;
@@ -275,8 +281,8 @@ body {
 }
 
 .section-subtitle {
-  background-color: var(--coquelicot_10);
-  color: var(--coquelicot);
+  background-color:  var(--coquelicot);;
+  color: white;
   padding: 8px 20px;
   border-radius: var(--radius-8);
 }
@@ -465,7 +471,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 240px;
+  height: 280px;
   background-color: var(--coquelicot);
   z-index: -1;
 }
@@ -690,9 +696,11 @@ body {
 .class-card .card-title:is(:hover, :focus) { color: var(--coquelicot); }
 
 .class-card .card-text {
-  color: var(--sonic-silver);
+  /* color: var(--sonic-silver); */
   font-size: var(--fs-6);
   margin-block: 16px 12px;
+  font-family: auto;
+  color: #181717d1;
 }
 
 .class-card .progress-wrapper {
@@ -890,8 +898,11 @@ body {
 }
 
 .copyright-link {
-  display: inline-block;
-  color: var(--coquelicot);
+  border-top: 1px solid;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Catamaran';
 }
 
 .footer-bottom-list {
@@ -1059,6 +1070,7 @@ body {
   .footer-top .container {
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
+    margin-bottom: 15px;
   }
 
 }
@@ -1072,7 +1084,11 @@ body {
     font-family: sans-serif;
     color: white;
   }
-  #about p, .coach-title, #class p{
+  .section-subtitle{
+    font-family: sans-serif;
+    color: white;
+  }
+  #class p, #about p, .coach-title{
     font-family: sans-serif;
     color: #181717;
   }
