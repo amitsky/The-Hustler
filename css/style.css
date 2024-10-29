@@ -903,6 +903,8 @@ body {
   text-align: center;
   font-size: 12px;
   font-family: 'Catamaran';
+  margin-top: 10px;
+  position: relative;
 }
 
 .footer-bottom-list {
@@ -1419,6 +1421,6 @@ body {
    * FOOTER
    */
 
-  .footer-top .container { grid-template-columns: 1fr 0.6fr 0.9fr 1fr; }
+  .footer-top .container { grid-template-columns: 2fr 0.6fr 0.9fr 1fr; }
 
 }
